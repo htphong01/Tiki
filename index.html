@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="app_header">
+            <a href="#">
+                <div class="top-bar-img"></div>
+            </a>
+            <div class="header__navbar-heading">
+                <div class="grid">
+                    <ul class="navbar-heading__list">
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fab fa-tumblr-square"></i> Ticketbox
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item navbar-heading__item--has-notify">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fab fa-chrome"></i> Trợ lý Tiki
+                            </a>
+                            <div class="header__notify">
+                                <div class="header__notify-content">
+                                    <a href="#" style="color: rgb(0, 127, 240); text-decoration: none;">Tiki Assistant</a> là tiện ích chạy trực tiếp trên trình duyệt Chrome - giúp gợi ý & tìm kiếm nhanh các sản phẩm tốt nhất trên Tiki, phù hợp với nhu
+                                    cầu tìm kiếm sản phẩm của bạn.
+                                    <br>
+                                    <p>Cách sử dụng: Bạn không cần phải làm gì khác sau khi cài đặt tiện ích này. Khi bạn tìm kiếm sản phẩm, tiện ích Tiki Assistant sẽ tự động gợi ý các sản phẩm phù hợp (nếu có).</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fab fas fa-hands-helping"></i> Ưu đãi đối tác
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fas fa-hotel"></i> Đặt khách sạn
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fas fa-plane-departure"></i> Đặt vé máy bay
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fas fa-fire-alt"></i> Khuyến mãi HOT
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fas fa-globe"></i> Hàng Quốc tế
+                            </a>
+                        </li>
+                        <li class="navbar-heading__item header__partner--has-notify">
+                            <a href="" class="navbar-heading__link">
+                                <i class="navbar-heading__icon fas fa-dollar-sign"></i> Bán hàng cùng Tiki
+                                <i class="fas fa-chevron-down" style="margin-left: 4px"></i>
+                            </a>
+                            <div class="header__partner-notify">
+                                <div class="header__partner-title">Bán hàng hiệu quả cùng Tiki</div>
+                                <div class="header__partner-notify-wrap">
+                                    <ul class="header__partner-notify-list">
+                                        <li class="header__partner-notify-item">Hơn <strong>30 triệu lượt truy cập</strong> hàng tháng với hơn <strong>40% là khách hàng trung thành</strong></li>
+                                        <li class="header__partner-notify-item"><br>Trung bình <strong>giao hàng dưới 2 ngày,</strong> nhận tiền nhanh hơn, không làm đọng vốn</li>
+                                        <li class="header__partner-notify-item"><br>Tỉ lệ <strong>huỷ đơn hàng dưới 3%,</strong> thấp nhất trên thị trường</li>
+                                        <li class="header__partner-notify-item"><br>Kiểm soát chất lượng hàng hoá. Đảm bảo <strong>cạnh tranh lành mạnh, không hàng giả, hàng nhái</strong></li>
+                                        <a href="#" class="header__partner-notify-link">
+                                            <button class="header__partner-notify-btn">ĐĂNG KÝ NGAY</button>
+                                        </a>
+                                    </ul>
+                                    <img src="https://frontend.tikicdn.com/_new-next/static/img/seller-with-tiki.png" alt="" class="header__partner-img">
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid">
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo-wrap">
+                        <div class="header__logo ">
+                            <a href="/" class="header__logo-link">
+                                <img src="./assets/img/logo-tiki.png" alt="Logo" class="header__logo-img header__logo-img-home">
+                            </a>
+                        </div>
+
+                        <div class="header__logo">
+                            <a href="#" class="header__logo-link">
+                                <img src="https://salt.tikicdn.com/ts/banner/33/ba/89/54c02d2475983f93a024c0cd13f238e4.png" alt="Logo" class="header__logo-img header__logo-img-tikinow">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn...">
+                        </div>
+
+                        <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                                Tìm kiếm
+                        </button>
+                    </div>
+
+                    <div class="header__info">
+                        <a href="#" class="header__info-bill">
+                            <i class="header__info-icon fas fa-store"></i>
+                            <span>Theo dõi<br>đơn hàng</span>
+                        </a>
+                        <div class="header__info-notify">
+                            <i class="header__info-icon fas fa-bell"></i>
+                            <span class="header__info-notice" style="font-size: 1rem;">3</span>
+                            <span>Thông báo<br>của tôi</span>
+                        </div>
+                        <div class="header__info-user">
+                            <i class="header__info-icon fas fa-user"></i>
+                            <span>
+                                <span class="header__info-username">Chào Hồ Thanh Phong </span>
+                            <span class="header__info-user-slogan">Tài khoản</span>
+                            </span>
+
+                            <div class="header__info-user-notify">
+                                <div class="header__info-user-wrap">
+                                    <a href="#" class="header-notify__link">Đơn hàng của tôi</a>
+                                    <a href="#" class="header-notify__link">Thông báo của tôi</a>
+                                    <a href="#" class="header-notify__link">Tài khoản của tôi</a>
+                                    <a href="#" class="header-notify__link">Nhận xét sản phẩm đã mua</a>
+                                    <a href="#" class="header-notify__link">Sản phẩm đã xem</a>
+                                    <a href="#" class="header-notify__link">Sản phẩm yêu thích</a>
+                                    <a href="#" class="header-notify__link">Sản phẩm mua sau</a>
+                                    <a href="#" class="header-notify__link">Nhận xét của tôi</a>
+                                    <a href="#" class="header-notify__link header-notify__link--has-img">
+                                        <img src="https://salt.tikicdn.com/ts/upload/5b/70/af/ac0eacaa8ec6738ac474f7bbe767bd75.png" alt="" class="header-notify-img">
+                                        <span class="header-notify__content">
+                                        <span>TikiNOW</span>
+                                        <span>Đăng ký sử dụng ngay</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="header-notify__link header-notify__link--has-img ">
+                                        <img src="https://frontend.tikicdn.com/_new-next/static/img/icons/tikixu.svg" alt="" class="header-notify-img">
+                                        <span class="header-notify__content">
+                                            <span>Thông tin Tiki Xu</span>
+                                        <span>Bạn đang có <b>0</b> Tiki Xu</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="header-notify__link header-notify__link--has-img">
+                                        <img src="https://salt.tikicdn.com/ts/upload/5b/70/af/ac0eacaa8ec6738ac474f7bbe767bd75.png" alt="" class="header-notify-img">
+                                        <span class="header-notify__content">
+                                        <span>Thông tin BookCare</span>
+                                        <span>Bạn đang có <b>0</b> BookCare</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="header-notify__link">Đổi trả dễ dàng</a>
+                                    <a href="#" class="header-notify__link">Thoát tài khoản</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="header__cart-link">
+                        <div class="header__cart">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-name">Giỏ hàng</div>
+                            <span class="header__cart-num">
+                                <strong>2</strong>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navbar footer -->
+                <div class="header__bottom">
+                    <div class="header__bottom-list">
+                        <div class="header__bottom-item">
+                            <div class="header__bottom-icon-wrap">
+                                <i class="header__bottom-icon fas fa-bars"></i>
+                            </div>
+                            <span style="width: 146px;">DANH MỤC SẢN PHẨM</span>
+                        </div>
+                        <div class="header__bottom-item">
+                            <div class="header__bottom-icon-wrap header__bottom-icon-wrap--round">
+                                <i class="header__bottom-icon fas fa-map-marker-alt " style="color: red;"></i>
+                            </div>
+                            <span style="width: 162px;"> Phường Hòa Quý, Quận Ngũ Hành Sơn, Đà Nẵng</span>
+                        </div>
+                        <div class="header__bottom-item header__bottom-item--has-notify ">
+                            <div class="header__bottom-icon-wrap">
+                                <i class="header__bottom-icon fas fa-chevron-down" style="font-size: 1rem;"></i>
+                            </div>
+                            <span style="width: 140px">Sản phẩm bạn đã xem</span>
+
+                            <div class="    header__seen-product">
+                                <div class="header__seen-product-wrap">
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/87/f3/d1/619feb82deb6a8ea3c9e7966541d0522.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/0e/ae/14/813fe7673c8a5c8f45468b83597744f7.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/25/d6/2c/f88080bba78a779fb78e1b76b73a9813.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/d3/8c/ba/cd8fdd869c962a481cfeff3064e29f39.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/36/5c/e4/04cc3d56d3a276a8e0e388905462fd70.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/4/-/4-u547-d20160913-t115059-740027.u547.d20161129.t153838.184766.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/i/m/img547_4.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/h/t/htbt1.u2487.d20161205.t140854.344544.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <a href="" class="header__seen-item">
+                                        <img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/c/o/combo-hoang-tu-be-1.u5465.d20170714.t175842.932264.jpg" alt="" class="header__seen-img">
+                                    </a>
+                                    <div class="header__seen-btn-wrap">
+                                        <button class="header__seen-btn">
+                                            Xem thêm
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__bottom-last">
+                            <div class="header__bottom-last-item">
+                                <a href="#" class="header__bottom-link">
+                                    <div class="header__bottom-img-wrapper">
+                                        <img src="./assets/img/tikinow.png" class="header__bottom-tikinow-img" alt="">
+                                    </div>
+                                    <span>TikiNOW giao nhanh<br>Hàng trăm nghìn sản phẩm</span>
+                                </a>
+                            </div>
+                            <div class="header__bottom-last-item">
+                                <div class="header__bottom-icon-wrap header__bottom-icon-wrap--round">
+                                    <i class="header__bottom-icon fas fa-medal" style="color: #36ff43; position: absolute; top: 25%;"></i>
+                                </div>
+                                <span style="width: 100px;">Tất cả sản phẩm<br>100% chính hiệu</span>
+                            </div>
+                            <div class="header__bottom-last-item">
+                                <a href="#" class="header__bottom-link">
+                                    <div class="header__bottom-icon-wrap header__bottom-icon-wrap--round">
+                                        <i class="header__bottom-icon fas fa-undo-alt" style="color: #4c9144; position: absolute; top: 20%;"></i>
+                                    </div>
+                                    <span>30 ngày đổi trả dễ dàng</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__main">
+            <div class="main__header grid">
+                <nav class="category">
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-mobile-alt"></i></span>Điện thoại - Máy tính bảng
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-tv"></i></span>Điện tử - Điện lạnh
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-headphones-alt"></i></span>Phụ kiện - Thiết bị số
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-laptop"></i></span>Laptop - Thiết bị IT
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-camera"></i></span>Máy ảnh - Quay phim
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-chair"></i></span>Điện gia dụng
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-couch"></i></span>Nhà cửa đời sống
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-couch"></i></span>Hàng tiêu dùng - Thực phẩm
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-baby-carriage"></i></span>Đồ chơi, Mẹ & Bé
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon far fa-heart"></i></span>Làm đẹp - Sức khỏe
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-tshirt"></i></span>Thời trang - Phụ kiện
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-volleyball-ball"></i></span>Thể thao - Dã ngoại
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-car"></i></span>Xe máy, Ô tô, Xe đạp
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-globe"></i></span>Hàng quốc tế
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-book-open"></i></span>Sách, VPP & Quà tặng
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">
+                                <span class="category-item__icon-wrap"><i class="category-item__icon fas fa-pager"></i></span>Voucher - Dịch vụ - Thẻ cào
+                            </a>
+                            <div class="category-item-arrow"></div>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="app_footer">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
